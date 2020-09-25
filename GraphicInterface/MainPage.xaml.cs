@@ -15,22 +15,29 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// O modelo de item de Página em Branco está documentado em https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x416
 
 namespace GraphicInterface
 {
     /// <summary>
-    /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
+    /// Pagina inicial do programa
     /// </summary>
     public sealed partial class MainPage : Page
     {
         public Client Client;
 
+        /// <summary>
+        /// Construtor da pagina
+        /// </summary>
         public MainPage()
         {
             this.InitializeComponent();
         }
 
+        /// <summary>
+        /// Evento para acionar o consumo da API
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             List<string> listFlags = new List<string>();
@@ -67,6 +74,10 @@ namespace GraphicInterface
             Client = new Client(urlJokeApi.ToString());
             ViewData();
         }
+
+        /// <summary>
+        /// Guardar dados em um txt da tela
+        /// </summary>
         private void ViewData()
         {
             var data = Client.StartHttpClientAsync();

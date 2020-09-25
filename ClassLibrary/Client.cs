@@ -6,10 +6,17 @@ using System.Text;
 
 namespace ClassLibrary
 {
+    /// <summary>
+    /// Classe que consome a JOKE API
+    /// </summary>
     public class Client
     {
         private string UrlJokeApi { get; set; }
 
+        /// <summary>
+        /// Construtor
+        /// </summary>
+        /// <param name="url"></param>
         public Client(string url)
         {
             if(url != null)
@@ -21,6 +28,10 @@ namespace ClassLibrary
             }
         }
 
+        /// <summary>
+        /// Iniciar o consumo da API
+        /// </summary>
+        /// <returns></returns>
         public async System.Threading.Tasks.Task<FinalJoke> StartHttpClientAsync()
         {
             HttpClient httpClient = new HttpClient();

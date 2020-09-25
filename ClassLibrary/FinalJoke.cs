@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
+    /// <summary>
+    /// Classe model da piada
+    /// </summary>
     public class FinalJoke
     {
         public bool Error { get; set; }
