@@ -1,8 +1,9 @@
 # ConsumingJokeAPI
-Projeto para consumir JOKE API 
+Projeto visando consumir dados vindos da API JOKE, podendo filtrar resultados de busca da API.
 
-> JokeAPI: https://sv443.net/jokeapi/v2/
+# Notas
+> O link da documentação da [JOKE API](https://sv443.net/jokeapi/v2/) 
 
-> Pacote nuget: Newtonsoft.json
+> Foi utilizado o pacote nuget Newtonsoft.json
 
-> Desenvolvido com EF Core 3
+> Desenvolvido com UWP e biblioteca de classes .net standard
