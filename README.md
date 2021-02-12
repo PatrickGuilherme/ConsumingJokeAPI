@@ -1,11 +1,11 @@
-# ConsumingJokeAPI
-Projeto visando consumir dados vindos da API JOKE, guardando seus dados em objetos podendo filtrar resultados de busca da API e exibir os resultados em tela atravez da interface em UWP.
+# Consumindo JOKE API
+O projeto visa consumir dados vindos da API JOKE, guardando seus dados temporariamente durante a execução da aplicação, sendo possivel filtrar resultados de busca da API e exibir-los na interface.
 
-# Notas
-> Link da documentação da [JOKE API](https://sv443.net/jokeapi/v2/) 
-
-> Foi utilizado o pacote nuget Newtonsoft.json
-
-> Desenvolvido com UWP e biblioteca de classes .net standard
-
-> Conversor de JSON para C#: [json2csharp](https://json2csharp.com/)
+# Tecnologias utilizadas
+* Documentação da [JOKE API](https://sv443.net/jokeapi/v2/)
+* Pacote nuget Newtonsoft.json para visual studio 
+* Desenvolvido com UWP
+* Biblioteca de classes .net standard
+* Conversor de JSON para C#: [json2csharp](https://json2csharp.com/)
+* Linguagem de programação C#
+* IDE - Visual Studio 2019
